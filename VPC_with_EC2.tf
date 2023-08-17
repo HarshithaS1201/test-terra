@@ -1,6 +1,6 @@
-#provider "github" {
-#  token ="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"
-#}
+provider "github" {
+  token ="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"
+}
 #resource "github_repository" "example" {
 #  name        = "TerraformJenkinsDemo"
 #  description = "My awesome codebase for Terraform and jenkins"
@@ -8,11 +8,11 @@
 #  visibility = "public"
 #  auto_init = true
 #}
-#
-#provider "aws" {
-#  region = "us-east-1"
-#  profile = "default"
-#}
+
+provider "aws" {
+  region = "us-east-1"
+  profile = "default"
+}
 
 resource "aws_instance" "ec2" {
   ami = "ami-0b0dcb5067f052a63"
