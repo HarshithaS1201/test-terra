@@ -11,9 +11,8 @@ resource "github_repository" "example" {
 
 provider "aws" {
   region = "us-east-1"
-  profile = "default"
-  aws_access_key_id        = "AKIAVDH72WFR6N3JHH2P"
-  aws_secret_access_key    = "5UZ5+2zjrn4lIbH1nbOte27+peAXM+TAl0/jXAQV"
+  shared_credentials_files  = ["C:/Users/siddaraju/.aws/credentials"]
+  profile                 = "siddaraju"
 
 }
 
