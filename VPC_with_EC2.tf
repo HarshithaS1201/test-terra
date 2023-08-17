@@ -1,17 +1,20 @@
-#provider "github" {
-#  token ="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"
-#}
-#resource "github_repository" "example" {
-#  name        = "test-terra"
-#  description = "My awesome codebase for Terraform and jenkins"
-#
-#  visibility = "public"
-#  auto_init = true
-#}
+provider "github" {
+  token ="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"
+}
+resource "github_repository" "example" {
+  name        = "test-terra"
+  description = "My awesome codebase for Terraform and jenkins"
+
+  visibility = "public"
+  auto_init = true
+}
 
 provider "aws" {
   region = "us-east-1"
   profile = "default"
+  aws_access_key_id        = "AKIAVDH72WFR6N3JHH2P"
+  aws_secret_access_key    = "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"
+
 }
 
 resource "aws_instance" "ec2" {
